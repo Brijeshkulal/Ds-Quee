@@ -17,6 +17,16 @@ public class LinkedlistQuee {
 		}
 	}
 	
+	public int dequeue() {
+		if(head == null) {
+			System.out.println("Quee is empty");
+		}
+		int result = head.data;
+		head = head.next;
+		size--;
+		return result;
+	}
+	
 	public void display()
 	{
 		Node temp = head;
